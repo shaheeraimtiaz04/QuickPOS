@@ -1,1 +1,2 @@
-# SPM QuickPOS
+# SPM QuickPOS landing page
+
