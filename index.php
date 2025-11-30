@@ -1,26 +1,32 @@
-<!-- FEATURE GRID SECTION -->
+<!-- FEATURE GRID SECTION WITH ICONS -->
 <section class="features" id="features">
     <h2>Our Key Features</h2>
     <div class="feature-grid">
 
         <div class="feature">
+            <span class="material-icons">inventory_2</span>
             <h3>Inventory Management</h3>
             <p>Track stock levels and receive instant low-stock alerts.</p>
         </div>
 
         <div class="feature">
+            <span class="material-icons">leaderboard</span>
             <h3>Sales Analytics</h3>
             <p>Understand your business with meaningful data insights.</p>
         </div>
 
         <div class="feature">
-            <h3>Fast Billing</h3>
-            <p>Process transactions quickly with a smooth POS interface.</p>
+            <span class="material-icons">settings</span>
+            <h3>Easy Integration</h3>
+            <p>Connect with tools and hardware you already use.</p>
         </div>
 
     </div>
 
     <style>
+        /* Material Icons */
+        @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
         .features {
             padding: 60px 50px;
             text-align: center;
@@ -48,12 +54,18 @@
         }
 
         .feature h3 {
-            margin-bottom: 12px;
+            margin: 12px 0;
             color: #0066ff;
         }
 
         .feature p {
             color: #555;
         }
+
+        .material-icons {
+            font-size: 40px;
+            color: #0066ff;
+            margin-bottom: 10px;
+        }
     </style>
-</section>
+    <
