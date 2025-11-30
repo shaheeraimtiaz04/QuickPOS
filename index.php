@@ -1,90 +1,117 @@
-<!-- FEATURE GRID SECTION WITH STYLING -->
-<section class="features" id="features">
-    <h2>Our Key Features</h2>
-    <div class="feature-grid">
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="feature">
-            <span class="material-icons">inventory_2</span>
-            <h3>Inventory Management</h3>
-            <p>Track stock levels and receive instant low-stock alerts.</p>
-        </div>
-
-        <div class="feature">
-            <span class="material-icons">leaderboard</span>
-            <h3>Sales Analytics</h3>
-            <p>Understand your business with meaningful data insights.</p>
-        </div>
-
-        <div class="feature">
-            <span class="material-icons">settings</span>
-            <h3>Easy Integration</h3>
-            <p>Connect with tools and hardware you already use.</p>
-        </div>
-
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPOS - Responsive Header</title>
 
     <style>
-        /* Material Icons */
-        @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-        /* Section Styling */
-        .features {
-            padding: 60px 50px;
-            text-align: center;
-            background: #eef2ff;
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .features h2 {
-            margin-bottom: 50px;
-            font-size: 36px;
-            color: #0066ff;
-        }
-
-        /* Grid Layout */
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            justify-items: center;
-        }
-
-        /* Individual Feature Card */
-        .feature {
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background: #fff;
-            padding: 30px 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 15px 30px;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        .feature:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-        }
-
-        .feature h3 {
-            margin: 15px 0 10px 0;
-            color: #0066ff;
+        nav .logo {
             font-size: 22px;
-        }
-
-        .feature p {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .material-icons {
-            font-size: 50px;
+            font-weight: bold;
             color: #0066ff;
-            margin-bottom: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0066ff;
+        }
+
+        .signup-btn {
+            background: #0066ff;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
         }
 
         /* Responsive */
-        @media (max-width: 900px) {
-            .feature-grid {
-                grid-template-columns: 1fr;
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+                text-align: center;
+                background: #fff;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                border-top: 1px solid #eee;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
             }
         }
     </style>
-</section>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">QuickPOS</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="nav-menu">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
