@@ -1,4 +1,4 @@
-QuickPOS Landing Page
+**QuickPOS Landing Page**
 **Overview**
 
 QuickPOS Landing Page is a fully implemented, responsive landing page for the QuickPOS system.
