@@ -1,6 +1,6 @@
-<!-- FEATURE SECTION -->
+<!-- FEATURE GRID SECTION -->
 <section class="features" id="features">
-    <h2>Powerful Features</h2>
+    <h2>Our Key Features</h2>
     <div class="feature-grid">
 
         <div class="feature">
@@ -24,7 +24,7 @@
         .features {
             padding: 60px 50px;
             text-align: center;
-            background: #fff;
+            background: #f5f7ff;
         }
 
         .features h2 {
@@ -33,34 +33,27 @@
         }
 
         .feature-grid {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
+            justify-items: center;
         }
 
         .feature {
-            width: 260px;
             padding: 25px;
             border-radius: 10px;
-            background: #f8f9ff;
+            background: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
             text-align: center;
         }
 
         .feature h3 {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #0066ff;
         }
 
         .feature p {
             color: #555;
-        }
-
-        @media (max-width: 900px) {
-            .feature-grid {
-                flex-direction: column;
-                align-items: center;
-            }
         }
     </style>
 </section>
