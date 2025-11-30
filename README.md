@@ -1,1 +1,1 @@
-# QuickPOS
+# SPM QuickPOS
