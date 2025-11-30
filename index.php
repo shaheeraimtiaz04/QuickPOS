@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickPOS - Responsive Header</title>
+    <title>QuickPOS - Flexbox Header</title>
 
     <style>
         body {
@@ -12,13 +12,15 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        /* NAVIGATION */
+        /* HEADER NAVIGATION */
         nav {
             display: flex;
             justify-content: space-between;
+            /* space between logo and menu */
             align-items: center;
-            background: #fff;
+            /* vertically center */
             padding: 15px 30px;
+            background: #fff;
             border-bottom: 1px solid #eee;
             position: sticky;
             top: 0;
@@ -26,7 +28,7 @@
         }
 
         nav .logo {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: bold;
             color: #0066ff;
         }
@@ -34,9 +36,9 @@
         nav ul {
             display: flex;
             list-style: none;
+            gap: 25px;
             margin: 0;
             padding: 0;
-            gap: 25px;
         }
 
         nav ul li a {
@@ -55,28 +57,28 @@
             color: #fff;
             padding: 8px 18px;
             border-radius: 6px;
-            text-decoration: none;
             font-weight: bold;
+            text-decoration: none;
         }
 
-        /* Hamburger menu */
+        /* Hamburger menu for mobile */
         .hamburger {
             display: none;
             font-size: 28px;
             cursor: pointer;
         }
 
-        /* Responsive */
+        /* RESPONSIVE */
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
                 display: none;
                 width: 100%;
                 text-align: center;
-                background: #fff;
                 position: absolute;
                 top: 60px;
                 left: 0;
+                background: #fff;
                 border-top: 1px solid #eee;
             }
 
@@ -93,7 +95,7 @@
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- HEADER NAVIGATION -->
     <nav>
         <div class="logo">QuickPOS</div>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
