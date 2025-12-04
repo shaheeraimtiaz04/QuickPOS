@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickPOS - Hero Section</title>
+    <title>QuickPOS</title>
 
     <style>
         body {
@@ -60,6 +60,30 @@
             border-radius: 12px;
         }
 
+        /* FOOTER */
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #4da3ff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            color: #76b8ff;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
         /* Responsive */
         @media (max-width: 900px) {
             .hero {
@@ -85,6 +109,16 @@
         </div>
         <img src="https://via.placeholder.com/420x300?text=POS+Mockup" alt="POS Software Mockup">
     </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>© 2025 QuickPOS — All Rights Reserved</p>
+        <p>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+    </footer>
 
 </body>
 
