@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickPOS - The Last POS System You’ll Ever Need</title>
 
+    <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
@@ -133,6 +134,15 @@
             margin-bottom: 10px;
         }
 
+        /* SCRUM-34 ADDED STYLES */
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #555;
+        }
+
         /* PRICING */
         .pricing {
             padding: 70px 50px;
@@ -230,6 +240,7 @@
 
 <body>
 
+    <!-- NAVIGATION -->
     <nav>
         <div class="logo">QuickPOS</div>
         <ul>
@@ -240,6 +251,7 @@
         <a href="#signup" class="signup-btn">Sign Up</a>
     </nav>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-text">
             <h1>The Last POS System You’ll Ever Need</h1>
@@ -249,6 +261,7 @@
         <img src="assets/img/mockup.png" alt="POS Software Mockup">
     </section>
 
+    <!-- FEATURES -->
     <section class="features" id="features">
         <h2>Powerful Features</h2>
         <div class="feature-grid">
@@ -278,6 +291,7 @@
         </div>
     </section>
 
+    <!-- PRICING -->
     <section class="pricing" id="pricing">
         <h2>Simple, Transparent Pricing</h2>
         <div class="price-grid">
@@ -316,6 +330,7 @@
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <p>Have questions? We're here to help.</p>
@@ -328,6 +343,7 @@
         </form>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2025 QuickPOS — All Rights Reserved</p>
         <p>
