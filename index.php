@@ -61,6 +61,16 @@
         }
 
         /* FOOTER */
+<!-- FOOTER SECTION -->
+<footer>
+    <p>© 2025 QuickPOS — All Rights Reserved</p>
+    <p>
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </p>
+
+    <style>
         footer {
             background: #111;
             color: #fff;
@@ -123,3 +133,5 @@
 </body>
 
 </html>
+    </style>
+</footer>
