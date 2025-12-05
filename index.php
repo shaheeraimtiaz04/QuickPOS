@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,6 +69,7 @@
             padding: 80px 50px;
             background: #f5f7ff;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .hero-text {
@@ -97,6 +97,7 @@
         }
 
         .hero img {
+            max-width: 100%;
             width: 420px;
             border-radius: 12px;
         }
@@ -134,25 +135,11 @@
             margin-bottom: 10px;
         }
 
-        /* SCRUM-34 ADDED STYLES */
-        .feature h3 {
-            margin-bottom: 10px;
-        }
-
-        .feature p {
-            color: #555;
-        }
-
-        /* PRICING */
+        /* Pricing */
         .pricing {
             padding: 70px 50px;
             background: #eef2ff;
             text-align: center;
-        }
-
-        .pricing h2 {
-            margin-bottom: 40px;
-            font-size: 32px;
         }
 
         .price-grid {
@@ -170,23 +157,7 @@
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .price-card p {
-            font-size: 26px;
-            font-weight: bold;
-            color: #0066ff;
-        }
-
-        .price-card a {
-            display: block;
-            margin-top: 15px;
-            background: #0066ff;
-            color: #fff;
-            padding: 10px;
-            border-radius: 6px;
-            text-decoration: none;
-        }
-
-        /* CONTACT */
+        /* Contact */
         .contact {
             padding: 70px 50px;
             text-align: center;
@@ -235,11 +206,91 @@
         footer a:hover {
             color: #76b8ff;
         }
+
+        /* -------------------------
+           RESPONSIVE DESIGN
+        ------------------------- */
+
+        /* Tablets */
+        @media (max-width: 992px) {
+            nav {
+                padding: 15px 30px;
+            }
+
+            .hero {
+                padding: 50px 30px;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+        }
+
+        /* Mobile Screens */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .signup-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+            }
+
+            .hero-text p {
+                font-size: 16px;
+            }
+
+            .feature {
+                width: 90%;
+            }
+
+            .price-card {
+                width: 90%;
+            }
+
+            .contact {
+                padding: 40px 20px;
+            }
+        }
+
+        /* Very Small Screens */
+        @media (max-width: 480px) {
+            nav .logo {
+                font-size: 18px;
+            }
+
+            .hero-text h1 {
+                font-size: 24px;
+            }
+
+            .cta-btn {
+                padding: 10px 18px;
+            }
+        }
     </style>
 </head>
 
 <body>
-
     <!-- NAVIGATION -->
     <nav>
         <div class="logo">QuickPOS</div>
@@ -268,25 +319,25 @@
             <div class="feature">
                 <span class="material-icons">inventory_2</span>
                 <h3>Inventory Management</h3>
-                <p>Track stock levels and receive instant low-stock alerts.</p>
+                <p>Track stock levels and receive instant alerts.</p>
             </div>
 
             <div class="feature">
                 <span class="material-icons">leaderboard</span>
                 <h3>Sales Analytics</h3>
-                <p>Understand your business with meaningful data insights.</p>
+                <p>Understand your business with insights.</p>
             </div>
 
             <div class="feature">
                 <span class="material-icons">settings</span>
                 <h3>Easy Integration</h3>
-                <p>Connect with tools and hardware you already use.</p>
+                <p>Connect with your existing tools.</p>
             </div>
 
             <div class="feature">
                 <span class="material-icons">payments</span>
                 <h3>Fast Billing</h3>
-                <p>Process transactions quickly with a smooth POS interface.</p>
+                <p>Process transactions quickly.</p>
             </div>
         </div>
     </section>
@@ -354,5 +405,4 @@
     </footer>
 
 </body>
-
 </html>
